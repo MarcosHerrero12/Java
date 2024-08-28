@@ -27,4 +27,7 @@ public interface UserMapper {
             " email = #{email} " +
             " WHERE id =#{id} ")
     void update (Users user);
+
+    @Select("SELECT * FROM usuarios WHERE email = #{email}")
+    Users findByEmail(String email);
 }
