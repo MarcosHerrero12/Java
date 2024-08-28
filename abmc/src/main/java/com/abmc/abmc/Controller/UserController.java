@@ -36,7 +36,7 @@ public class UserController {
     public ResponseEntity<Users> findById(@RequestParam int id){
         Users user = userService.findById(id);
         if (user == null){
-            throw new ResourceNotFoundException("User not found with ID:" + id);
+            throw new ResourceNotFoundException("User not found with ID :" + id);
         }
         return ResponseEntity.ok(user);
     }
