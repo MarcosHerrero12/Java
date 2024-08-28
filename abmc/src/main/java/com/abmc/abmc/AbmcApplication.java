@@ -1,13 +1,13 @@
 package com.abmc.abmc;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringBootProjectApplication {
-
+@MapperScan("com.abmc.abmc.Persistence")
+public class AbmcApplication {
 	public static void main(String[] args) {
-		SpringApplication.run(SpringBootProjectApplication.class, args);
+		SpringApplication.run(AbmcApplication.class, args);
 	}
-
 }
