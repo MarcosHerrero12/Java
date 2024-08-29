@@ -21,10 +21,10 @@ public class Users {
     private int id;
     @NotBlank
     @Size(min = 2, max = 50)
-    private String nombre;
+    private String name;
     @NotBlank
     @Size(min = 2, max = 50)
-    private String apellido;
+    private String surname;
     @Email
     private String email;
 
