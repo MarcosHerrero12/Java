@@ -1,0 +1,11 @@
+version: '3'
+services:
+  postgres:
+    image: postgres
+    container_name: myAppTasks
+    environment:
+      POSTGRES_USER: Marcos
+      POSTGRES_PASSWORD: Marqos12
+      POSTGRES_DB: Tasks
+    ports:
+      - "5432:5432"
